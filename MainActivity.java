@@ -1,3 +1,4 @@
+ //THIS IS THE MAIN ACTIVITY WHERE TWO BUTTON IS CREATED FOR USER PROFILE AND SCANNER//
 package com.example.scanner;
 
 import android.Manifest;
