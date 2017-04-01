@@ -1,3 +1,4 @@
+ //THIS CODE IS FOR SCANNER//
 package com.example.scanner;
 
 import android.app.Activity;
