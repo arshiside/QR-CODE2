@@ -1,9 +1,10 @@
+ //THIS CODING IS FOR GENERATING QR CODE//
 package com.example.user;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
-import android.graphics.Bitmap;
+import android.graphics.Bitmap;//BITMAP IS TO PREVIEW IMAGE
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
@@ -12,7 +13,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.example.scanner.R;
-import com.google.zxing.BarcodeFormat;
+import com.google.zxing.BarcodeFormat;//USED ZXING LIBRARY FOR CREATING QR CODE
 import com.google.zxing.common.ByteMatrix;
 import com.google.zxing.qrcode.QRCodeWriter;
 
@@ -47,7 +48,8 @@ TextView tvDetails;
 		db.close();
 		System.out.println("2");
 	}
-	String path;
+	String path; 
+	//CREATE METHOD FOR GENERATE QR CODE//
 public  void generateQRCODE(View v){
 	QRCodeWriter writer = new QRCodeWriter();
 
@@ -115,7 +117,8 @@ e.printStackTrace();
 			
 		}
 
-	}
+	} 
+	//CREATED METHOD FOR A SHARING QRCODE//
 public  void share(View v){
 	Intent intentShareFile = new Intent(Intent.ACTION_SEND);
 	File fileWithinMyDir = new File(path);
